@@ -17,13 +17,9 @@ const io = new socket_io_1.Server(server);
 app.get('/', (req, res) => {
     res.send('Hello Test!');
 });
-// Route pour '/users'
-app.get('/users', (req, res) => {
-    res.send('Hello Users!');
-});
 // Route pour '/test'
 app.get('/test', (req, res) => {
-    res.sendFile(path_1.default.resolve(__dirname, '../index.html'));
+    res.sendFile(path_1.default.resolve(__dirname, '../src/index.html'));
 });
 // Démarrage du serveur
 server.listen(port, () => {

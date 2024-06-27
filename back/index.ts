@@ -16,14 +16,10 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Hello Test!');
 });
 
-// Route pour '/users'
-app.get('/users', (req: Request, res: Response) => {
-    res.send('Hello Users!');
-});
 
 // Route pour '/test'
 app.get('/test', (req: Request, res: Response) => {
-    res.sendFile(path.resolve(__dirname, '../index.html'));
+    res.sendFile(path.resolve(__dirname, '../src/index.html'));
 });
 
 // Démarrage du serveur
